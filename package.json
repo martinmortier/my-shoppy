@@ -10,6 +10,7 @@
     "@types/node": "^12.20.14",
     "@types/react": "^17.0.9",
     "@types/react-dom": "^17.0.6",
+    "axios": "^0.21.1",
     "json-server": "^0.16.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -26,7 +27,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server":"json-server -p3001 --watch db.json"
+    "server": "json-server --watch db.json --port 3001"
   },
   "eslintConfig": {
     "extends": [
