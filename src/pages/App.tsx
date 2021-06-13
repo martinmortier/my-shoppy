@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import './App.css';
-import userService from './services/userService';
+import Product from '../components/Product';
+import userService from '../services/userService';
 function App() {
 
   const getUsers = async () => {
@@ -11,8 +12,10 @@ function App() {
     getUsers()
   },[])
   return (
-    <div>Hello world</div>
-
+    <div>
+      <div>Hello world</div>
+      <Product />
+    </div>
   )
 }
 
