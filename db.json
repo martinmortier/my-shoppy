@@ -1,8 +1,21 @@
 {
-    "users": [
+    "category": [
         {
-            "username": "John" ,
-            "password": "Doe"
+            "category_id": 1,
+            "category_name": "Pain" ,
+            "category_inactive": 0
+        }
+    ],
+    "products":[
+        {
+            "product_id":1,
+            "product_name":"Pain blanc",
+            "product_price": 1.30
+        },
+        {
+            "product_id":2,
+            "product_name":"Pain de la main",
+            "product_price": 1.80
         }
     ]
 }

@@ -5,11 +5,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import store from './redux/store'
+import MainTheme from './mainTheme/MainTheme';
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <MainTheme>
+        <App />
+      </MainTheme>
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')
