@@ -6,7 +6,7 @@ const Product = () => {
     const dispatch = useDispatch()
     useEffect(() => {
         dispatch(initializeProduct())
-    }, [])
+    }, [dispatch])
     const products = useSelector(state => state.product)
     return (
         <div>
