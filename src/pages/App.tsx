@@ -1,19 +1,9 @@
-import { useEffect } from 'react';
 import './App.css';
-import Product from '../components/Product';
-import userService from '../services/userService';
+import Card from '../components/card/Card'
 function App() {
-
-  const getUsers = async () => {
-    const users = await userService.getAll()
-    console.log(users);
-  }
-  useEffect(() => {
-    getUsers()
-  },[])
   return (
     <div>
-      <Product />
+      <Card />
     </div>
   )
 }
