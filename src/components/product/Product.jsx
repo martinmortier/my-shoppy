@@ -1,7 +1,8 @@
 import { Grid  } from '@material-ui/core'
 
 const Product = (props) => {
-    const { product_id, product_name, product_price } = props
+    console.log("PRODUCT",props);
+    const { product_id, product_name, product_price } = props.product
     return (
         <div>
             <Grid item>
