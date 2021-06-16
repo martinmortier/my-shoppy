@@ -1,24 +1,26 @@
 const initialState = {
+    products: [],
     total: 0
 }
 
 const shoppingCartReducer = (state = initialState, action) => {
     switch(action.type){
-        case 'INCREASE_TOTAL':
+        case 'ADD_PRODUCT':
             return {
                 ...state,
-                total: state.total +=action.payload.product_price
+                products: state.products.concat(action.payload.product),
+                total: state.total+= action.payload.product.product_price
             }
         default:
             return state
     }
 }
 
-export const increaseTotal = (product_price) => {
+export const addProduct = (product) => {
     return {
-        type: 'INCREASE_TOTAL',
+        type: 'ADD_PRODUCT',
         payload: {
-            product_price
+            product
         }
     }
 }

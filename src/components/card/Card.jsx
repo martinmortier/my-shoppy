@@ -4,7 +4,7 @@ import { initializeProduct } from '../../redux/reducers/productReducer'
 import { Grid, Paper, Button } from '@material-ui/core'
 import { useStyles } from './Card.styles'
 import Product from '../product/Product'
-import { increaseTotal } from '../../redux/reducers/shoppingCartReducer'
+import { addProduct } from '../../redux/reducers/shoppingCartReducer'
 
 const Card = () => {
     const dispatch = useDispatch()
@@ -22,7 +22,7 @@ const Card = () => {
                         <Grid container direction="column" alignContent='center'>
                             <Product product={product} />
                         </Grid>
-                        <Button onClick={() => dispatch(increaseTotal(1))} className={classes.buttonValidate} variant="contained">Validate</Button>
+                        <Button onClick={() => dispatch(addProduct(product))} className={classes.buttonValidate} variant="contained">Validate</Button>
                     </Paper>
                 </Grid>
             )}
