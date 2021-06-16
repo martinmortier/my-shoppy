@@ -1,12 +1,6 @@
 import { Grid  } from '@material-ui/core'
 
-type ProductProps = {
-    product_id: number,
-    product_name: string,
-    product_price: number
-}
-
-const Product = (props: ProductProps) => {
+const Product = (props) => {
     const { product_id, product_name, product_price } = props
     return (
         <div>

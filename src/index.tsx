@@ -5,7 +5,7 @@ import './index.css';
 import App from './pages/App'
 import reportWebVitals from './reportWebVitals';
 import store from './redux/store'
-import MainTheme from './mainTheme/MainTheme';
+import MainTheme from './components/mainTheme/MainTheme'
 
 ReactDOM.render(
   <React.StrictMode>
