@@ -15,9 +15,9 @@ const Card = () => {
     const classes = useStyles()
     return (
         <div>
-            <Grid container spacing={1}>
+            <Grid container>
             {products.map((product, index) =>
-                <Grid key={index} item lg={3} sm={4} xs={12}>
+                <Grid key={index} item lg={4} sm={4} xs={12} style={{width:'10vw'}}>
                     <Paper elevation={2}>
                         <Grid container direction="column" alignContent='center'>
                             <Product product={product} />
