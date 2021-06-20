@@ -1,9 +1,9 @@
 import './App.css';
-import Card from '../components/card/Card'
+import ProductList from '../components/productList/ProductList'
 function App() {
   return (
     <div>
-      <Card />
+      <ProductList />
     </div>
   )
 }
