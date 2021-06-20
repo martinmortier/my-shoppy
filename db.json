@@ -10,32 +10,38 @@
         {
             "product_id":1,
             "product_name":"Pain blanc",
-            "product_price": 1.30
+            "product_price": 1.30,
+            "category_id": 1
         },
         {
             "product_id":2,
             "product_name":"Pain de la main",
-            "product_price": 1.80
+            "product_price": 1.80,
+            "category_id": 1
         },
         {
             "product_id":1,
             "product_name":"Pain blanc",
-            "product_price": 1.30
+            "product_price": 1.30,
+            "category_id": 2
         },
         {
             "product_id":2,
             "product_name":"Pain de la main",
-            "product_price": 1.80
+            "product_price": 1.80,
+            "category_id": 2
         },
         {
             "product_id":1,
             "product_name":"Pain blanc",
-            "product_price": 1.30
+            "product_price": 1.30,
+            "category_id": 3
         },
         {
             "product_id":2,
             "product_name":"Pain de la main",
-            "product_price": 1.80
+            "product_price": 1.80,
+            "category_id": 3
         }
     ]
 }
