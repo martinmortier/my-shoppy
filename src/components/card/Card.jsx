@@ -11,6 +11,7 @@ const Card = () => {
     useEffect(() => {
         dispatch(initializeProduct())
     }, [dispatch])
+
     const products = useSelector(state => state.product)
     const classes = useStyles()
     return (
@@ -20,7 +21,7 @@ const Card = () => {
                 <Grid key={index} item lg={4} sm={4} xs={12} style={{width:'10vw'}}>
                     <Paper elevation={2}>
                         <Grid container direction="column" alignContent='center'>
-                            <Product product={product} />
+                            <Product product={product} displayImage={true}/>
                         </Grid>
                         <Button onClick={() => dispatch(addProduct(product))} className={classes.buttonValidate} variant="contained">Validate</Button>
                     </Paper>

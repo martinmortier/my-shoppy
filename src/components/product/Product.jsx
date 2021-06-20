@@ -1,13 +1,14 @@
 import { Grid  } from '@material-ui/core'
+import PropTypes from 'prop-types'
 
 const Product = (props) => {
-    console.log("PRODUCT",props);
-    const { product_id, product_name, product_price } = props.product
+    const { product_name, product_price } = props.product
+    const { displayImage } = props
     return (
         <div>
-            <Grid item>
+            {displayImage && <Grid item>
                 <img style={{height:'auto',width:'150px'}} src={"https://www.bakersathome.be//assets/uploads/content/_1000xAUTO_fit_center-center_80_none/Dinsdag.jpg"} alt="pain" /> 
-            </Grid>
+            </Grid> }
             <Grid item>
                 Name : {product_name}
             </Grid>
@@ -16,6 +17,11 @@ const Product = (props) => {
             </Grid>
         </div>
     )
+}
+
+Product.propTypes = {
+    product: PropTypes.object.isRequired,
+    displayImage: PropTypes.bool.isRequired
 }
 
 export default Product

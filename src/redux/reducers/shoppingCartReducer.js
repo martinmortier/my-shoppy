@@ -1,6 +1,6 @@
 const initialState = {
-    products: [],
-    total: 0
+        products: [],
+        total: 0
 }
 
 const shoppingCartReducer = (state = initialState, action) => {
@@ -11,6 +11,8 @@ const shoppingCartReducer = (state = initialState, action) => {
                 products: state.products.concat(action.payload.product),
                 total: state.total+= action.payload.product.product_price
             }
+        case 'GET_SHOPPING_CART':
+            return state
         default:
             return state
     }

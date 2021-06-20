@@ -6,6 +6,7 @@ const getAll = async () => {
     return response.data
 }
 
-export default {
+const userService = {
     getAll
 }
+export default userService

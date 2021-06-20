@@ -5,5 +5,7 @@ const getAll = async () => {
     const response = await axios.get(`${apiURL.currentURL}/products`)
     return response.data
 }
-
-export default { getAll }
+const productService = {
+    getAll
+}
+export default productService

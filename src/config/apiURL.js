@@ -1,5 +1,6 @@
 const currentURL = 'http://localhost:3001'
 
-export default {
+const apiURL = {
     currentURL
 }
+export default apiURL
