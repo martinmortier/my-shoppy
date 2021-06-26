@@ -12,7 +12,7 @@ const Login = () => {
             login: login,
             password: password
         } 
-        dispatch(loginUser(user))
+            dispatch(loginUser(user))
     }
 
     const handleChange = (event) => {

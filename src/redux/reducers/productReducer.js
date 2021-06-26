@@ -23,7 +23,7 @@ export const initializeProduct = () => {
     }
 }
 
-export const getProductByCategory = async (id) => {
+export const getProductByCategory = id => {
     return async dispatch => {
         const data = await productService.getProductByCategory(id)
         dispatch({
