@@ -6,8 +6,7 @@ const getAll = async () => {
     return response.data
 }
 
-const getUser = async (user) => {
-    console.log("getUser",user)
+const getUser = async user => {
     const response = await axios.post(`${apiURL.currentURL}/user/login`,{login: user.login, password: user.password})
     return response.data
 }

@@ -1,26 +1,16 @@
 import { Header, Content } from "./MainTheme.styles"
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import ShoppingCart from "../shoppingCart/ShoppingCart"
-import App from "../../pages/App"
+import { BrowserRouter as Router} from 'react-router-dom'
 import Navbar from '../navbar/Navbar'
-
 const MainTheme = (props) => {
     return (
         <div>
             <Router>
-            <Header>
-                <Navbar />
-            </Header>
-            <Content>
-                <Switch>
-                    <Route path="/shoppingCart">
-                        <ShoppingCart />
-                    </Route>
-                    <Route path="/">
-                        <App />
-                    </Route>
-                </Switch>
-            </Content>
+                <Header>
+                    <Navbar />
+                </Header>
+                <Content>
+                    {props.children}
+                </Content>
             </Router>
         </div>
     )
