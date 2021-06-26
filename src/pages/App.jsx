@@ -4,8 +4,7 @@ import Login from '../components/login/Login'
 function App() {
   return (
     <div>
-      {/* <ProductList /> */}
-      <Login />
+      <p>Home</p>
     </div>
   )
 }

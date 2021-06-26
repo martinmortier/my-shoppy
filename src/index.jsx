@@ -13,22 +13,22 @@ import ProductList from "./components/productList/ProductList";
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <MainTheme>
-        <Switch>
-          <Route path="/shoppingCart">
-            <ShoppingCart />
-          </Route>
-          <Route path="/login">
-            <Login />
-          </Route>
-          <Route path="/productList">
-            <ProductList />
-          </Route>
-          <Route path="/">
-            <App />
-          </Route>
-        </Switch>
-      </MainTheme>
+		<MainTheme>
+			<Switch>
+				<Route path="/shoppingCart">
+					<ShoppingCart />
+				</Route>
+				<Route path="/login">
+					<Login />
+				</Route>
+				<Route path="/productList">
+					<ProductList />
+				</Route>
+				<Route path="/">
+					<App />
+				</Route>
+			</Switch>
+		</MainTheme>
     </Provider>
   </React.StrictMode>,
   document.getElementById("root")
