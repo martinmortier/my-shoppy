@@ -9,7 +9,7 @@ const shoppingCartReducer = (state = initialState, action) => {
             return {
                 ...state,
                 products: state.products.concat(action.payload.product),
-                total: state.total+= action.payload.product.product_price
+                total: state.total+= action.payload.product.price
             }
         case 'GET_SHOPPING_CART':
             return state

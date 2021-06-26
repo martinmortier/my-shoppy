@@ -8,10 +8,10 @@ const ShoppingCart = () => {
         <div>
             {shoppingCarts.products.length > 0 &&
             <div>
-                {shoppingCarts.products.map(product =>
-                    <Product product={product} displayImage={false} />
+                {shoppingCarts.products.map((product, index) =>
+                    <Product key={index} product={product} displayImage={false} />
                 )}
-                <p>Price: {shoppingCarts.total}</p>
+                <p>Total: {shoppingCarts.total}</p>
             </div>
             }
         </div>

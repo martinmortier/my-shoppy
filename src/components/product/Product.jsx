@@ -2,7 +2,7 @@ import { Grid  } from '@material-ui/core'
 import PropTypes from 'prop-types'
 
 const Product = (props) => {
-    const { product_name, product_price } = props.product
+    const { name, category_id, id_product, price }= props.product
     const { displayImage } = props
     return (
         <div>
@@ -10,10 +10,10 @@ const Product = (props) => {
                 <img style={{height:'auto',width:'150px'}} src={"https://www.bakersathome.be//assets/uploads/content/_1000xAUTO_fit_center-center_80_none/Dinsdag.jpg"} alt="pain" /> 
             </Grid> }
             <Grid item>
-                Name : {product_name}
+                Name : {name}
             </Grid>
             <Grid item>
-                Price : {product_price}
+                Price : {price}
             </Grid>
         </div>
     )

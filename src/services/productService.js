@@ -2,7 +2,7 @@ import axios from 'axios'
 import apiURL from '../config/apiURL'
 
 const getAll = async () => {
-    const response = await axios.get(`${apiURL.currentURL}/products`)
+    const response = await axios.get(`${apiURL.currentURL}/product`)
     return response.data
 }
 //TODO: Making the back end
