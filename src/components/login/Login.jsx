@@ -11,7 +11,7 @@ const Login = () => {
         const user = {
             login: login,
             password: password
-        } 
+        }
             dispatch(loginUser(user))
     }
 

@@ -1,22 +1,23 @@
 import { Link } from 'react-router-dom'
+import { UnorderedList, List } from './Navbar.styles'
 
 const Navbar = () => {
     return (
         <nav>
-            <ul>
-                <li>
+            <UnorderedList>
+                <List>
                     <Link to="/">Home</Link>
-                </li>
-                <li>
+                </List>
+                <List>
                     <Link to="/productList">Product List</Link>
-                </li>
-                <li>
+                </List>
+                <List>
                     <Link to="/shoppingCart">Shopping cart</Link>
-                </li>
-                <li>
+                </List>
+                <List>
                     <Link to="/login">Log in</Link>
-                </li>
-            </ul>
+                </List>
+            </UnorderedList>
         </nav>
     )
 }

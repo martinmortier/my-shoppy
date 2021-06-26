@@ -33,6 +33,6 @@ export const getProductByCategory = id => {
             }
         })
     }
-    
 }
+
 export default productReducer
