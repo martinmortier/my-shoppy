@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { loginUser } from '../../redux/reducers/userReducer'
 const Login = () => {
-    const [login, setLogin] = useState('') 
+    const [login, setLogin] = useState('')
     const [password, setPassword] = useState('')
     const dispatch = useDispatch()
 
@@ -16,7 +16,6 @@ const Login = () => {
     }
 
     const handleChange = (event) => {
-        console.log(event.target);
         switch(event.target.name) {
             case "login":
                 setLogin(event.target.value)
