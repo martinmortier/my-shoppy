@@ -2,7 +2,7 @@ import { Header, Content } from "./MainTheme.styles"
 import { BrowserRouter as Router} from 'react-router-dom'
 import Navbar from '../navbar/Navbar'
 import { useEffect } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { userLogged } from '../../redux/reducers/userReducer'
 const MainTheme = (props) => {
     const dispatch = useDispatch()
@@ -10,7 +10,7 @@ const MainTheme = (props) => {
         if(localStorage.getItem('TOKENJWT')){
             dispatch(userLogged(JSON.parse(localStorage.getItem('TOKENJWT'))))
         }
-    },[])
+    },[dispatch])
     return (
         <div>
             <Router>
