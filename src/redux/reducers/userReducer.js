@@ -9,14 +9,12 @@ const userReducer = (state = initialState, action) =>{
             localStorage.setItem('TOKENJWT',JSON.stringify(action.payload))
             return {
                 ...state,
-                token: action.payload.token,
-                login: action.payload.login
+                ...action.payload
             }
         case 'USER_LOGGED':
             return {
                 ...state,
-                token: action.payload.token,
-                login: action.payload.login
+                ...action.payload
             }
         default:
             return state
@@ -34,7 +32,6 @@ export const loginUser = user => {
 }
 
 export const userLogged = user => {
-    console.log(user);
     return {
         type: 'USER_LOGGED',
         payload: user
