@@ -1,4 +1,6 @@
 # TODO::
-[X] Secure all pages `<addr>`
-[] Create route for CRUD product and category`<addr>`
-[] Expire the token after x hours`<addr>`
+[X] Secure all pages
+
+[] Create route for CRUD product and category
+
+[] Expire the token after x hours
