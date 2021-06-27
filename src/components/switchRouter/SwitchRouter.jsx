@@ -1,5 +1,5 @@
 import { Switch, Route, Redirect } from 'react-router-dom'
-import ShoppingCart from "../shoppingCart/ShoppingCart";
+import ShoppingCartPage from '../../pages/shoppingCartPage/ShoppingCartPage'
 import Login from "../login/Login";
 import ProductPage from "../../pages/productPage/ProductPage"
 import App from "../../pages/appPage/App";
@@ -10,7 +10,7 @@ import { useSelector } from 'react-redux'
         <div>
             <Switch>
                 <Route path="/shoppingCart">
-                    <ShoppingCart />
+                    {user.token ? <ShoppingCartPage /> : <Redirect to="/login" /> }
                 </Route>
                 <Route path="/login">
                     <Login />
