@@ -13,7 +13,7 @@ import { useSelector } from 'react-redux'
                     {user.token ? <ShoppingCartPage /> : <Redirect to="/login" /> }
                 </Route>
                 <Route path="/login">
-                    <Login />
+                    {!user.token ? <Login /> : <Redirect to="/" /> }
                 </Route>
                 <Route path="/productList">
                     {user.token ? <ProductPage /> : <Redirect to="/login" /> }

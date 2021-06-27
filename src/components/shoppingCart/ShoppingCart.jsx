@@ -6,13 +6,17 @@ const ShoppingCart = () => {
 
     return (
         <div>
-            {shoppingCarts.products.length > 0 &&
-            <div>
-                {shoppingCarts.products.map((product, index) =>
-                    <Product key={index} product={product} displayImage={false} />
-                )}
-                <p>Total: {shoppingCarts.total}</p>
-            </div>
+            {shoppingCarts.products.length > 0 ?
+                <div>
+                    {shoppingCarts.products.map((product, index) =>
+                        <Product key={index} product={product} displayImage={false} />
+                    )}
+                    <p>Total: {shoppingCarts.total}</p>
+                </div>
+                :
+                <div>
+                    <p>Empty !</p>
+                </div>
             }
         </div>
     )

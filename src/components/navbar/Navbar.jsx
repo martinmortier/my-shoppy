@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom'
 import { UnorderedList, List } from './Navbar.styles'
-
+import { useSelector } from 'react-redux'
 const Navbar = () => {
+    const user = useSelector(state => state.user)
     return (
         <nav>
             <UnorderedList>
@@ -14,9 +15,11 @@ const Navbar = () => {
                 <List>
                     <Link to="/shoppingCart">Shopping cart</Link>
                 </List>
-                <List>
-                    <Link to="/login">Log in</Link>
-                </List>
+                {!user.token &&
+                    <List>
+                        <Link to="/login">Log in</Link>
+                    </List>
+                }
             </UnorderedList>
         </nav>
     )
