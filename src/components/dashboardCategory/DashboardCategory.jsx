@@ -1,7 +1,7 @@
 const DashboardCategory = () => {
     return (
         <div>
-            <p>Main contenu</p>
+            <p>Main content</p>
         </div>
     )
 }
