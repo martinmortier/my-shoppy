@@ -15,6 +15,9 @@ const Navbar = () => {
                 <List>
                     <Link to="/shoppingCart">Shopping cart</Link>
                 </List>
+                <List>
+                    <Link to="/dashboard">Dashboard</Link>
+                </List>
                 {!user.token &&
                     <List>
                         <Link to="/login">Log in</Link>
