@@ -9,9 +9,9 @@ import SwitchRouter from './components/switchRouter/SwitchRouter'
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-		<MainTheme>
-			<SwitchRouter />
-		</MainTheme>
+      <MainTheme>
+        <SwitchRouter />
+      </MainTheme>
     </Provider>
   </React.StrictMode>,
   document.getElementById("root")

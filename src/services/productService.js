@@ -7,7 +7,9 @@ const getAll = async () => {
 }
 //TODO: Making the back end
 const getProductByCategory = async id => {
-    const response = await axios.get(`${apiURL.currentURL}/products/productsByCategory/${id}`)
+
+    const response = await axios.get(`${apiURL.currentURL}/product?category_id=${id}`)
+    // const response = await axios.get(`${apiURL.currentURL}/products/productsByCategory/${id}`)
     return response.data
 }
 

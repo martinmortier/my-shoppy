@@ -5,33 +5,24 @@ import DashboardProduct from '../../components/dashboardProduct/DashboardProduct
 import { Layout, Title } from './DashboardPage.styles'
 const DashboardPage = () => {
     const [currentComponent, setCurrentComponent] = useState('DashboardCategory')
-    const changeMain = (component) => {
-        switch(component){
+    
+    const displayMain = () => {
+        switch(currentComponent){
             case 'DashboardCategory':
-                setCurrentComponent('DashboardCategory')
-                break
+                return <DashboardCategory />
             case 'DashboardProduct':
-                setCurrentComponent('DashboardProduct')
-                break
+            return <DashboardProduct />
             case 'DashboardOverview':
-                setCurrentComponent('DashboardOverview')
+                //TODO: Implement DashboardOverview component
+                return null
             default:
                 return null
-        }
-    }
-
-    const displayMain = () => {
-        if(currentComponent === 'DashboardCategory'){
-            return <DashboardCategory />
-        }
-        else if(currentComponent === 'DashboardProduct'){
-            return <DashboardProduct />
         }
     }
     return (
         <div>
            <Layout>
-                <DashboardMenu changeMain={changeMain}/>
+                <DashboardMenu setCurrentComponent={setCurrentComponent}/>
                 <Title>Welcome to the dashboard</Title>
                 {displayMain()}
            </Layout>

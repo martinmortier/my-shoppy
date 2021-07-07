@@ -5,9 +5,9 @@ import DashboardIcon from '@material-ui/icons/Dashboard';
 const DashboardMenu = (props) => {
     return (
         <Layout>
-            <p onClick={() => props.changeMain('DashboardOverview')}><DashboardIcon />{' '}Overview</p>
-            <p onClick={() => props.changeMain('DashboardCategory')}><CategoryIcon />{' '}Category</p>
-            <p onClick={() => props.changeMain('DashboardProduct')}><InsertDriveFileIcon />{' '}Product</p>
+            <p onClick={() => props.setCurrentComponent('DashboardOverview')}><DashboardIcon />{' '}Overview</p>
+            <p onClick={() => props.setCurrentComponent('DashboardCategory')}><CategoryIcon />{' '}Category</p>
+            <p onClick={() => props.setCurrentComponent('DashboardProduct')}><InsertDriveFileIcon />{' '}Product</p>
         </Layout>
     )
 }
