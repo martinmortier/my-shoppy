@@ -1,7 +1,8 @@
+import AddCategory from '../addCategory/AddCategory'
 const DashboardProduct = () => {
     return (
         <div>
-            <p>Main content from DashboardProduct</p>    
+            <p>Product Dashboard</p>
         </div>
     )
 }

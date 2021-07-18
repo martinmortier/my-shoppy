@@ -1,7 +1,8 @@
+import AddCategory from '../addCategory/AddCategory'
 const DashboardCategory = () => {
     return (
         <div>
-            <p>Main content</p>
+            <AddCategory />
         </div>
     )
 }

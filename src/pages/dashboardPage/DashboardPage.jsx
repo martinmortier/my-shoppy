@@ -23,7 +23,6 @@ const DashboardPage = () => {
         <div>
            <Layout>
                 <DashboardMenu setCurrentComponent={setCurrentComponent}/>
-                <Title>Welcome to the dashboard</Title>
                 {displayMain()}
            </Layout>
         </div>
