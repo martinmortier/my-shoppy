@@ -1,4 +1,3 @@
-import AddCategory from '../addCategory/AddCategory'
 const DashboardProduct = () => {
     return (
         <div>

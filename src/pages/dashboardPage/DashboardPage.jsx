@@ -2,7 +2,7 @@ import { useState } from 'react'
 import DashboardMenu from '../../components/dashboardMenu/DashboardMenu'
 import DashboardCategory from '../../components/dashboardCategory/DashboardCategory'
 import DashboardProduct from '../../components/dashboardProduct/DashboardProduct'
-import { Layout, Title } from './DashboardPage.styles'
+import { Layout } from './DashboardPage.styles'
 const DashboardPage = () => {
     const [currentComponent, setCurrentComponent] = useState('DashboardCategory')
     

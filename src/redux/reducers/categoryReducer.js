@@ -11,7 +11,6 @@ const categoryReducer = (state = [], action) => {
 export const addCategory = (name, shop_id) => {
     return async dispatch => {
         if(name && shop_id){
-            console.log("passe ici");
             await categoryService.addCategory(name, shop_id)
             const data = await categoryService.getCategories()
             dispatch({
