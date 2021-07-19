@@ -14,7 +14,6 @@ const DashboardPage = () => {
             case 'DashboardProduct':
             return <DashboardProduct />
             case 'DashboardOverview':
-                //TODO: Implement DashboardOverview component
                 return <DashboardOverview />
             default:
                 return null
