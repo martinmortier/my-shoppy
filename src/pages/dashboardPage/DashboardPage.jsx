@@ -2,6 +2,7 @@ import { useState } from 'react'
 import DashboardMenu from '../../components/dashboardMenu/DashboardMenu'
 import DashboardCategory from '../../components/dashboardCategory/DashboardCategory'
 import DashboardProduct from '../../components/dashboardProduct/DashboardProduct'
+import DashboardOverview from '../../components/dashboardOverview/DashboardOverview'
 import { Layout } from './DashboardPage.styles'
 const DashboardPage = () => {
     const [currentComponent, setCurrentComponent] = useState('DashboardCategory')
@@ -14,7 +15,7 @@ const DashboardPage = () => {
             return <DashboardProduct />
             case 'DashboardOverview':
                 //TODO: Implement DashboardOverview component
-                return null
+                return <DashboardOverview />
             default:
                 return null
         }
