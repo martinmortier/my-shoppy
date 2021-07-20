@@ -1,11 +1,11 @@
 import axios from "axios"
 import apiURL from "../config/apiURL"
 
-const addCategory = async (name, shop_id) => {
-    if(name && shop_id){
+const addCategory = async (name, id_shop) => {
+    if(name && id_shop){
         const newCategory = {
             name: name,
-            shop_id: shop_id
+            id_shop: id_shop 
         }
         await axios.post(`${apiURL.currentURL}/category`,newCategory);
     }else{

@@ -5,7 +5,6 @@ const DashboardOverview = () => {
     const [datatable, setDataTable] = useState({})
     const fetchData = async () => {
         const datatable = await dashboardService.category_product()
-        console.log(datatable);
         setDataTable(datatable)
     }
 
@@ -25,9 +24,9 @@ const DashboardOverview = () => {
                     </TableHead>
                     <TableBody>
                         { datatable.map((item,index) => (
-                            <TableRow>
-                                <TableCell key={index}>{item.categoryName}</TableCell>
-                                <TableCell key={index}>{item.productName}</TableCell>
+                            <TableRow key={index}>
+                                <TableCell>{item.categoryName}</TableCell>
+                                <TableCell>{item.productName}</TableCell>
                             </TableRow>
                         ))}
                     </TableBody>

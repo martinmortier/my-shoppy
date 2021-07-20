@@ -1,7 +1,8 @@
 import userService from "../../services/userService"
 const initialState = {
     token: '',
-    login: ''
+    login: '',
+    id_shop: '',
 }
 const userReducer = (state = initialState, action) =>{
     switch(action.type){
