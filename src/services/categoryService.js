@@ -14,7 +14,8 @@ const addCategory = async (name, id_shop) => {
 }
 
 const getCategories = async () => {
-    return await axios.get(`${apiURL.currentURL}/category`)
+    const response= await axios.get(`${apiURL.currentURL}/category`)
+    return response.data
 }
 
 const categoryService = {
