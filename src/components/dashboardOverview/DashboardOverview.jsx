@@ -19,7 +19,7 @@ const DashboardOverview = () => {
                     <TableHead>
                         <TableRow>
                             <TableCell>Category</TableCell>
-                            <TableCell>Product</TableCell>
+                            <TableCell sortDirection='asc'>Product</TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>

@@ -8,10 +8,10 @@ const categoryReducer = (state = [], action) => {
    } 
 }
 
-export const addCategory = (name, shop_id) => {
+export const addCategory = (name, id_shop) => {
     return async dispatch => {
-        if(name && shop_id){
-            await categoryService.addCategory(name, shop_id)
+        if(name && id_shop){
+            await categoryService.addCategory(name, id_shop)
             const data = await categoryService.getCategories()
             dispatch({
                 type: 'ADD_CATEGORY',
