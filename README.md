@@ -1,6 +1,6 @@
 # TODO::
 [X] Secure all pages
 
-[] Create route for CRUD product and category
+[] Create CRUD route product and category
 
-[] Expire the token after x hours
+[] Make the token expired after x hours
